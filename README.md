@@ -1,1 +1,1 @@
-## Classic Rock-Paper-Scissors game
+## Classic Rock-Paper-Scissors-Lizard-Spock game
