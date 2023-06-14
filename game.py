@@ -40,14 +40,14 @@ def read_user_choice() -> GameChoice:
     """
     user_choice = GameChoice.INVALID
     while user_choice == GameChoice.INVALID:
-        print("Select one number:")
+        print("\nSelect one number:")
         print(f'{GameChoice.PAPER.value}. Paper')
         print(f'{GameChoice.ROCK.value}. Rock')
         print(f'{GameChoice.SCISSORS.value}. Scissors')
         print(f'{GameChoice.LIZARD.value}. Lizard')
         print(f'{GameChoice.SPOCK.value}. Spock')
-        print("-" * 20)
-        print(f'{GameChoice.QUIT.value}. Quit the game')
+        print("---------------------------")
+        print(f'{GameChoice.QUIT.value}. Quit the game\n\n')
 
         try:
             user_choice = GameChoice(int(input("Enter your choice: ")))
@@ -95,7 +95,6 @@ def evaluate_move(user_choice, comp_choice):
         else:
             # Scissors
             result = "I win! Scissors cut paper"
-
     elif user_choice == GameChoice.ROCK:
         if comp_choice == GameChoice.ROCK:
             result = "Is's a tie!"
